@@ -14,7 +14,7 @@ const Sidebar = () => {
   const menuItems = [
     { name: 'Dashboard', icon: 'dashboard', path: '/dashboard' },
     { name: 'Search', icon: 'search', path: '/search' },
-
+    { name: 'Upload', icon: 'upload_file', path: '/upload' },
     { name: 'Saved', icon: 'bookmark', path: '/saved' },
     { name: 'Profile', icon: 'account_circle', path: '/profile' },
   ];
