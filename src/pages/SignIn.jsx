@@ -56,9 +56,9 @@ const SignIn = () => {
                 <div className="absolute inset-0 rounded-full border border-primary/20 shadow-[0_0_60px_rgba(29,142,255,0.2)]"></div>
                 <div className="absolute inset-4 rounded-full overflow-hidden">
                     <img 
-                        src="/assets/signin.png" 
+                        src="/assets/signin_new.png" 
                         alt="Intelligent Job Search" 
-                        className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-[3000ms]"
+                        className="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-[3000ms]"
                     />
                 </div>
                 {/* Orbital Arches (Animated) */}
@@ -88,23 +88,6 @@ const SignIn = () => {
             <div className="max-w-md mx-auto w-full">
                 <h1 className="text-4xl font-headline font-bold text-white mb-3">Welcome back 👋</h1>
                 <p className="text-on-surface-variant text-base mb-10">Access your intelligent matching dashboard.</p>
-
-                {/* Social Logins */}
-                <div className="grid grid-cols-2 gap-4 mb-8">
-                    <button className="flex items-center justify-center gap-3 px-6 py-3 rounded-xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.08] hover:border-white/10 transition-all font-body font-medium text-white text-sm group">
-                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" className="w-5 h-5 transition-transform group-hover:scale-110" />
-                        Google
-                    </button>
-                    <button className="flex items-center justify-center gap-3 px-6 py-3 rounded-xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.08] hover:border-white/10 transition-all font-body font-medium text-white text-sm group">
-                        <img src="https://www.svgrepo.com/show/475661/linkedin-color.svg" alt="LinkedIn" className="w-5 h-5 transition-transform group-hover:scale-110" />
-                        LinkedIn
-                    </button>
-                </div>
-
-                <div className="relative mb-8 text-center">
-                    <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-white/5"></div>
-                    <span className="relative z-10 px-4 bg-[#081821] text-[10px] uppercase tracking-[0.2em] text-slate-500 font-mono">Or</span>
-                </div>
 
                 {/* Main Form */}
                 <form className="space-y-6" onSubmit={handleSubmit}>

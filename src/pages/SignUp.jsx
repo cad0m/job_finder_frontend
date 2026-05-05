@@ -56,9 +56,9 @@ const SignUp = () => {
                 {/* Globe Container */}
                 <div className="relative w-56 h-56 rounded-full overflow-hidden shadow-[0_0_100px_rgba(29,142,255,0.3)]">
                     <img 
-                        src="/assets/signup.png" 
+                        src="/assets/signup_new.png" 
                         alt="Intelligent Job Search" 
-                        className="w-full h-full object-cover opacity-80"
+                        className="w-full h-full object-cover opacity-90"
                     />
                     {/* Pulsing Dots */}
                     <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-pulse shadow-[0_0_10px_#1d8eff]"></div>
@@ -96,23 +96,6 @@ const SignUp = () => {
                 </div>
                 
                 <h1 className="text-5xl font-headline font-bold text-white mb-10">Join the Frontier</h1>
-
-                {/* Social Auth */}
-                <div className="grid grid-cols-2 gap-4 mb-10">
-                    <button className="flex items-center justify-center gap-3 px-6 py-1.5 rounded-xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.05] hover:border-primary/30 transition-all font-body font-medium text-white text-sm group">
-                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" className="w-5 h-5 transition-transform group-hover:scale-110" />
-                        <span className="opacity-70 group-hover:opacity-100">Continue with Google</span>
-                    </button>
-                    <button className="flex items-center justify-center gap-3 px-6 py-1.5 rounded-xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.05] hover:border-primary/30 transition-all font-body font-medium text-white text-sm group">
-                        <img src="https://www.svgrepo.com/show/475661/linkedin-color.svg" alt="LinkedIn" className="w-5 h-5 transition-transform group-hover:scale-110" />
-                        <span className="opacity-70 group-hover:opacity-100">Continue with LinkedIn</span>
-                    </button>
-                </div>
-
-                <div className="relative mb-10 text-center">
-                    <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-white/5"></div>
-                    <span className="relative z-10 px-4 bg-[#081821] text-[10px] uppercase tracking-[0.3em] text-slate-500 font-mono">Or Create Account</span>
-                </div>
 
                 {/* Form */}
                 <form className="space-y-6" onSubmit={handleSubmit}>
