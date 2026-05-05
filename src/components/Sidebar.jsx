@@ -16,6 +16,7 @@ const Sidebar = () => {
     { name: 'Search', icon: 'search', path: '/search' },
     { name: 'Upload', icon: 'upload_file', path: '/upload' },
     { name: 'Saved', icon: 'bookmark', path: '/saved' },
+    { name: 'Applied', icon: 'send', path: '/applied' },
     { name: 'Profile', icon: 'account_circle', path: '/profile' },
   ];
 

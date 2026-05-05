@@ -241,8 +241,13 @@ export const supabaseDB = {
         .select(`
           *,
           job:jobs(
+            id,
             title,
-            company:company_id ( name, logo_url )
+            seniority_level,
+            salary,
+            posted_date,
+            company:company_id ( name, logo_url ),
+            location:location_id ( city, country )
           )
         `)
         .eq('user_id', userId)
@@ -250,13 +255,19 @@ export const supabaseDB = {
 
       if (error) throw error;
 
-      // Flatten job.company
       return (data || []).map(app => ({
         ...app,
         job: app.job ? {
           ...app.job,
           company: app.job.company?.name ?? 'Unknown',
           logo_url: app.job.company?.logo_url ?? null,
+          location: app.job.location
+            ? [app.job.location.city, app.job.location.country].filter(Boolean).join(', ')
+            : null,
+          salary_range: app.job.salary ? `$${(app.job.salary / 1000).toFixed(0)}k` : null,
+          posted_at: app.job.posted_date
+            ? new Date(app.job.posted_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+            : null,
         } : null
       }));
     } catch (err) {

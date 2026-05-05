@@ -14,6 +14,7 @@ import Profile from './pages/Profile';
 
 import Search from './pages/Search';
 import Saved from './pages/Saved';
+import Applied from './pages/Applied';
 import { AuthProvider } from './context/AuthProvider';
 import ProtectedRoute from './components/layout/ProtectedRoute';
 
@@ -39,6 +40,7 @@ function App() {
 
           <Route path="/search" element={<ProtectedRoute><Search /></ProtectedRoute>} />
           <Route path="/saved" element={<ProtectedRoute><Saved /></ProtectedRoute>} />
+          <Route path="/applied" element={<ProtectedRoute><Applied /></ProtectedRoute>} />
         </Routes>
       </Router>
     </AuthProvider>
