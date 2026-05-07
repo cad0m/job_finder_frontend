@@ -23,7 +23,10 @@ const Sidebar = () => {
   return (
     <aside className="fixed left-0 top-0 h-full w-60 z-40 bg-[#04151e] border-r border-white/5 flex flex-col py-8 px-0">
       <Link to="/dashboard" className="mb-10 px-6 text-white block group">
-        <h1 className="text-xl font-bold font-space tracking-tight leading-none group-hover:text-primary transition-colors">JobMatcher AI</h1>
+        <div className="flex items-center gap-2">
+          <img src="/logo.png" alt="JobMatcher AI" className="w-6 h-6 object-contain group-hover:scale-105 transition-transform duration-300" />
+          <h1 className="text-xl font-bold font-space tracking-tight leading-none group-hover:text-primary transition-colors">JobMatcher AI</h1>
+        </div>
         <p className="text-[9px] text-[#1D8EFF] tracking-[0.2em] uppercase mt-1 font-bold font-space">Intelligence Engine</p>
       </Link>
 

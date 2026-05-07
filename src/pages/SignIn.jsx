@@ -37,6 +37,7 @@ const SignIn = () => {
       {/* Top Logo */}
       <div className="relative z-10 mb-12">
         <Link to="/" className="text-2xl font-headline font-bold text-white tracking-tight flex items-center gap-2">
+          <img src="/logo.png" alt="JobMatcher AI" className="w-8 h-8 object-contain" />
           JobMatcher <span className="text-primary italic">AI</span>
         </Link>
       </div>

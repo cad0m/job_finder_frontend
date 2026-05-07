@@ -38,8 +38,16 @@ const SignUp = () => {
       <div className="absolute inset-0 grid-mesh opacity-20"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] hero-glow opacity-30 pointer-events-none"></div>
 
+      {/* Top Logo */}
+      <div className="relative z-10 mb-12">
+        <Link to="/" className="text-2xl font-headline font-bold text-white tracking-tight flex items-center gap-2">
+          <img src="/logo.png" alt="JobMatcher AI" className="w-8 h-8 object-contain" />
+          JobMatcher <span className="text-primary italic">AI</span>
+        </Link>
+      </div>
+
       {/* Main Container */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         className="relative z-10 w-full max-w-6xl rounded-[40px] border border-white/5 bg-[#05161e]/60 backdrop-blur-3xl overflow-hidden shadow-[0_0_100px_rgba(0,0,0,0.6)] flex flex-col lg:flex-row"

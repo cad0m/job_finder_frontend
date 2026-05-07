@@ -39,9 +39,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link className="flex items-center gap-3 group" to="/">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center shadow-[0_0_15px_rgba(29,142,255,0.4)] group-hover:scale-105 group-hover:rotate-6 transition-all duration-300">
-            <span className="material-symbols-outlined text-white text-lg">blur_on</span>
-          </div>
+          <img src="/logo.png" alt="JobMatcher AI" className="w-8 h-8 object-contain group-hover:scale-105 group-hover:rotate-6 transition-all duration-300" />
           <span className="text-xl font-black text-white tracking-tighter font-headline group-hover:text-primary transition-colors">
             JobMatcher <span className="text-primary italic font-medium">AI</span>
           </span>
